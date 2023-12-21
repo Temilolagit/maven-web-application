@@ -32,6 +32,7 @@ node{
     sh "echo 'monitoring and observation and alerting' "
     sh "echo 'application performance Monitoring in progress' "
   }
+*/
   stage('9.notification'){
     sh "echo create email notification to resolve any issue that may arise"
     //use pipeline syntax and email notification plugin to achieve this  
@@ -42,6 +43,6 @@ Regards,
 Temilola''', recipientProviders: [developers(), upstreamDevelopers(), buildUser()], subject: 'Job Status', to: 'voilafresh@gmail.com'
 
   }
-*/
+
 
 }
